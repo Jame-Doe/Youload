@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youload - YouTube Downloader</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+
+    <div class="container">
+        <div class="logo-container">
+            <i class="fa-brands fa-youtube logo-icon"></i>
+            <h1>You<span>load</span></h1>
+        </div>
+        <p class="subtitle">Baixe seus vídeos e músicas favoritos em alta qualidade instantaneamente.</p>
+
+        <form id="downloadForm">
+            <div class="input-wrapper">
+                <i class="fa-solid fa-link input-icon"></i>
+                <input type="url" id="youtubeUrl" placeholder="Cole o link do YouTube aqui..." required autocomplete="off">
+                <button type="button" id="pasteBtn" class="btn-paste" title="Colar link">
+                    <i class="fa-regular fa-paste"></i> Colar
+                </button>
+            </div>
+
+            <div class="controls-wrapper">
+                <div class="select-wrapper">
+                    <i class="fa-solid fa-sliders select-icon"></i>
+                    <select id="formatSelect">
+                        <option value="mp3">Audio (MP3)</option>
+                        <option value="mp4">Vídeo (MP4)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-download">
+                    <span>Download</span>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </button>
+            </div>
+        </form>
+
+        <div class="badge-features">
+            <span><i class="fa-solid fa-bolt"></i> Rápido</span>
+            <span><i class="fa-solid fa-shield-halved"></i> Seguro</span>
+            <span><i class="fa-solid fa-infinity"></i> Ilimitado</span>
+        </div>
+    </div>
+
+    <footer class="footer-author">
+        <p>Desenvolvido por <span class="author-name">Jame Doe</span></p>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p>
+            Usamos cookies para personalizar conteúdos e melhorar sua experiência.
+            Ao navegar, você concorda com nossa <a href="/politica-de-privacidade.html">Política de Privacidade</a>.
+        </p>
+        <button id="accept-cookies-btn" class="cookie-btn">Aceitar e Fechar</button>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
